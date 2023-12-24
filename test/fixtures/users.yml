@@ -1,13 +1,15 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  email: MyString
-  first_name: MyString
-  last_name: MyString
-  age: 1
+  id: 1
+  email: mike@gmail.com
+  first_name: Mike
+  last_name: Dauglas
+  age: 25
 
 two:
-  email: MyString
-  first_name: MyString
-  last_name: MyString
-  age: 1
+  id: 2
+  email: nancy@gmail.com
+  first_name: Nancy
+  last_name: Lee
+  age: 35

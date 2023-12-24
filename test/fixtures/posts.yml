@@ -1,11 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  body: MyText
+  id: 1
+  title: My first post
+  body: I'm Mike. This is my first post. I'm so excited!
   user_id: 1
 
 two:
-  title: MyString
-  body: MyText
-  user_id: 1
+  id: 2
+  title: My first post too
+  body: I'm Nancy. This is my first post too. I'm so excited and happy!
+  user_id: 2

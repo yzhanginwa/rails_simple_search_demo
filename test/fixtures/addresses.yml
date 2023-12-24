@@ -1,19 +1,21 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  address1: MyString
-  address2: MyString
-  city: MyString
-  state: MyString
-  zip: MyString
-  addressable_type: MyString
+  id: 1
+  address1: 100 main st
+  address2: Suite 100
+  city: Redmond
+  state: WA
+  zip: 01234
+  addressable_type: User
   addressable_id: 1
 
 two:
-  address1: MyString
-  address2: MyString
-  city: MyString
-  state: MyString
-  zip: MyString
-  addressable_type: MyString
-  addressable_id: 1
+  id: 2
+  address1: 200 main st
+  address2: Apt 200
+  city: Bellevue
+  state: WA
+  zip: 01235
+  addressable_type: User
+  addressable_id: 2

@@ -9,6 +9,7 @@ After cloning the project to your local, run the following command:
 $ cd rails_simple_search_demo
 $ bundle install
 $ bin/rails db:migrate
+$ bin/rails db:fixtures:load  # optional
 $ bin/dev
 ```
 ## Versions
