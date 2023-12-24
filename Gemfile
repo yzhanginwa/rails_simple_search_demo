@@ -70,3 +70,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem 'rails-simple-search', '>= 1.1.9'

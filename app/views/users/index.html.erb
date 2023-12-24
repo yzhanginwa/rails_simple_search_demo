@@ -1,3 +1,47 @@
+<h1 class="my-3 text-4xl">rails-simple-search</h2>
+<hr class="my-3" />
+<%= form_for @search, url: search_users_path, data: {turbo: false} do |f| %>
+  <div class="w-full grid grid-cols-1 gap-1 md:grid-cols-2 lg:grid-cols-3">
+    <div>
+    <%= f.label "First Name", class: "block" %>
+    <%= f.text_field 'first_name' %>
+    </div>
+    <div>
+    <%= f.label "Last Name", class: "block" %>
+    <%= f.text_field 'last_name' %>
+    </div>
+    <div>
+    <%= f.label "Age", class: "block" %>
+    <%= f.text_field 'age_greater_than_equal_to' %>
+    </div>
+    <div>
+    <%= f.label "Address1", class: "block" %>
+    <%= f.text_field 'address.address1' %>
+    </div>
+    <div>
+    <%= f.label "City", class: "block" %>
+    <%= f.text_field 'address.city' %>
+    </div>
+    <div>
+    <%= f.label "Post title or body", class: "block" %>
+    <%= f.text_field 'posts.title_or_posts.body' %>
+    </div>
+    <div>
+    <%= f.label "Post body", class: "block" %>
+    <%= f.text_field 'posts.body' %>
+    </div>
+    <div>
+    <%= f.label "Comment", class: "block" %>
+    <%= f.text_field 'comments.body' %>
+    </div>
+    <div class="col-start-1">
+    <%= f.submit "search", class: "text-white bg-blue-700 hover:bg-blue-800 px-5 py-3 rounded-lg" %>
+    </div>
+  </div>
+<% end %>
+<hr class="my-3" />
+
+
 <div class="w-full">
   <% if notice.present? %>
     <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>

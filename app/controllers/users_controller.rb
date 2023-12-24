@@ -3,7 +3,8 @@ class UsersController < ApplicationController
 
   # GET /users or /users.json
   def index
-    @users = User.all
+    @search= Search.new(:user, params[:search], exact_match: [:first_name])
+    @users = @search.run.order('first_name')
   end
 
   # GET /users/1 or /users/1.json

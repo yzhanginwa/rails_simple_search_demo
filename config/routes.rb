@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  post 'users/index', controller: 'users', action: 'index', as: :search_users
+
   resources :addresses
   resources :comments
   resources :posts
