@@ -1,27 +1,29 @@
-<div id="<%= dom_id user %>">
-  <p class="my-5">
+<hr class="mt-6">
+<div id="<%= dom_id user %>" class="grid grid-cols-2 gap-1 md:grid-cols-3">
+  <p class="p-3">
     <strong class="block font-medium mb-1">Email:</strong>
     <%= user.email %>
   </p>
 
-  <p class="my-5">
+  <p class="p-3">
     <strong class="block font-medium mb-1">First name:</strong>
     <%= user.first_name %>
   </p>
 
-  <p class="my-5">
+  <p class="p-3">
     <strong class="block font-medium mb-1">Last name:</strong>
     <%= user.last_name %>
-  </p>
+  </p >
 
-  <p class="my-5">
+  <p class="p-3">
     <strong class="block font-medium mb-1">Age:</strong>
     <%= user.age %>
   </p>
 
-  <% if action_name != "show" %>
-    <%= link_to "Show this user", user, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
-    <%= link_to "Edit this user", edit_user_path(user), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
-    <hr class="mt-6">
-  <% end %>
 </div>
+<% if action_name != "show" %>
+  <div class="p-3 text-white">
+  <%= link_to "Show this user", user, class: "rounded-lg p-3 bg-blue-600 inline-block font-medium" %>
+  <%= link_to "Edit this user", edit_user_path(user), class: "rounded-lg mt-2 p-3 bg-blue-600 inline-block font-medium" %>
+  </div>
+<% end %>
