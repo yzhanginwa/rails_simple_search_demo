@@ -71,4 +71,4 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem 'rails-simple-search', '>= 1.1.9'
+gem 'rails-simple-search', '~> 1.2'

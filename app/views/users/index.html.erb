@@ -34,6 +34,10 @@
     <%= f.label "Comments to my posts", class: "block" %>
     <%= f.text_field 'posts.comments.body' %>
     </div>
+    <div>
+    <%= f.label "Author who commentted me", class: "block" %>
+    <%= f.text_field 'posts.comments.user.first_name_or_posts.comments.user.last_name' %>
+    </div>
     <div class="col-start-1">
     <%= f.submit "search", class: "text-white bg-blue-700 hover:bg-blue-800 px-5 py-3 rounded-lg" %>
     </div>
