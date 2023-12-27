@@ -14,7 +14,7 @@ $ bin/dev
 ```
 ## Versions
 
-This project used Ruby 3.1.4, Rails 7.1.4, and RailsSimpleSearch 1.1.9.
+This project used Ruby 3.1.4, Rails 7.1.4, and RailsSimpleSearch 1.2.0.
 
 ## Explanation
 
@@ -72,6 +72,9 @@ The following is the code related to the search:
     <br/>
     <%= f.label "Comment" %>
     <%= f.text_field 'comments.body' %>
+    <br/>
+    <%= f.label "Author who commented my posts", class: "block" %>
+    <%= f.text_field 'posts.comments.user.first_name_or_posts.comments.user.last_name' %>
     <br/>
     <%= f.submit "search" %>
   <% end %>
