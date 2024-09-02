@@ -3,6 +3,10 @@
 <%= form_for @search, url: search_users_path, data: {turbo: false} do |f| %>
   <div class="w-full grid grid-cols-1 gap-1 md:grid-cols-2 lg:grid-cols-3">
     <div>
+    <%= f.label "Last Name or Street", class: "block" %>
+    <%= f.text_field 'address.address1_or_last_name' %>
+    </div>
+    <div>
     <%= f.label "First Name", class: "block" %>
     <%= f.text_field 'first_name' %>
     </div>
